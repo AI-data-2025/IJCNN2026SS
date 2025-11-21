@@ -29,10 +29,14 @@
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)), url('background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: white;
-            padding: 60px 40px;
+            padding: 80px 40px;
             text-align: center;
+            position: relative;
         }
 
         header h1 {
@@ -48,6 +52,52 @@
             text-align: center;
             display: block;
             width: 100%;
+        }
+
+        header .welcome {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header .welcome strong {
+            display: block;
+            font-size: 1.15em;
+            margin-bottom: 15px;
+        }
+
+        header .conference-list {
+            margin: 15px 0;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        header .official-link {
+            margin-top: 20px;
+            font-size: 1.05em;
+        }
+
+        header .official-link a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        header .official-link a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
         }
 
         .content {
@@ -207,6 +257,23 @@
             <h1>Novel Networks in Human-Machine Collaboration</h1>
             <p class="subtitle">Paradigms, Methods, and Applications</p>
             <p class="subtitle">Special Session for IJCNN 2026</p>
+
+            <div class="welcome">
+                <p>On behalf of the organizing committee, it is our great pleasure to welcome you to the 2026 IEEE World Congress on Computational Intelligence (WCCI) – the world's leading forum for advances in computational intelligence.</p>
+
+                <p>WCCI 2026 will take place in the beautiful and historic city of <strong>Maastricht</strong>, a vibrant hub of culture, innovation, and international collaboration. This congress brings together the three flagship conferences of the IEEE Computational Intelligence Society:</p>
+
+                <div class="conference-list">
+                    <p>• The International Joint Conference on Neural Networks (IJCNN)</p>
+                    <p>• The IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)</p>
+                    <p>• The IEEE Congress on Evolutionary Computation (IEEE CEC)</p>
+                </div>
+
+                <div class="official-link">
+                    <strong>Official Conference Website:</strong><br>
+                    <a href="https://attend.ieee.org/wcci-2026/" target="_blank">https://attend.ieee.org/wcci-2026/</a>
+                </div>
+            </div>
         </header>
 
         <div class="content">
